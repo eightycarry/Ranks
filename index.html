@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ranks</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="ranks.js"></script>
+</head>
+<body>
+
+<h1>Your Rank and Name</h1>
+
+<form>
+
+    <label for="firstName">What is your first name?</label>
+    <input type="text"  name="firstName" id="firstName">
+    <br>
+
+    <label for="lastName">What is your Last name?</label>
+    <input type="text"  name="lastName" id="lastName">
+    <br><br>
+
+    <h2>What is your rank?</h2>
+
+    <input type="radio" name="rank" id="private1" value="Private " data-rank="Private" checked>
+    <label for="private1">Private</label>
+    <br>
+
+    <input type="radio" name="rank" id="private2" value="Private 2 " data-rank="Private 2">
+    <label for="private2">Private 2</label>
+    <br>
+
+    <input type="radio" name="rank" id="privateFirstClass" value="Private First Class " data-rank="Private First Class">
+    <label for="privateFirstClass">Private First Class</label>
+    <br>
+
+    <button>Your Rank and Name!</button>
+    <br><br>
+
+<table>
+
+    <td>
+        <tr>Hello <span id="rankName"></span> <span id="name1"></span> <span id="name2"></span>!</tr>
+    </td>
+
+</table>
+
+</form>
+
+</body>
+</html>
