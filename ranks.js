@@ -16,10 +16,13 @@ $(document).ready(function(){
         //ask jQuery for selected radio boxes
         var selectedBoxes = $("input[name=rank]:checked").val();
 
+        var selectedColor= $("input[name=rank]:checked").data("color");
+
         //output name and rank to table
         $("#name1").text(firstName);
         $("#name2").text(lastName);
         $("#rankName").text(selectedBoxes);
+        $("span").css("color", selectedColor);
     };
 
 });
